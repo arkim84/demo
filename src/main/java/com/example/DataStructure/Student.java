@@ -1,4 +1,4 @@
-package com.example;
+package com.example.DataStructure;
 
 public class Student {
 	

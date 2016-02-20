@@ -1,4 +1,4 @@
-package com.example;
+package com.example.algorithm;
 
 public class StringScoreTest {
 	

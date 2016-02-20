@@ -1,4 +1,4 @@
-package com.example;
+package com.example.DataStructure;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;
