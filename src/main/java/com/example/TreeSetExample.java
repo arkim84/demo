@@ -9,7 +9,7 @@ public class TreeSetExample {
 	
 	public static void main(String args[]) {
 		
-		StopWatch stopWatch = new StopWatch("PushSenderGCM");
+		StopWatch stopWatch = new StopWatch("TreeSet");
 		
 		TreeSet<Integer> scores = new TreeSet<Integer>();
 		scores.add(new Integer(87));
