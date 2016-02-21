@@ -1,4 +1,4 @@
-package com.example.algorithm;
+package com.example.Algorithm;
 
 import java.util.HashSet;
 import java.util.Set;
