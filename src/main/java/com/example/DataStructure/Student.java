@@ -1,6 +1,6 @@
 package com.example.DataStructure;
 
-public class Student {
+public class Student implements Comparable<Student>{
 	
 	public int sno;
 	public String name;
@@ -22,5 +22,12 @@ public class Student {
 	
 	public int hashCode() {
 		return sno + name.hashCode();
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		if(sno<o.sno) return -1;
+		else if(sno==o.sno) return 0;
+		else return 1;
 	}
 }

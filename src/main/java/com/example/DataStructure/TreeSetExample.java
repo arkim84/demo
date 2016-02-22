@@ -35,9 +35,9 @@ public class TreeSetExample {
 //	    
 //	    System.out.println(stopWatch.toString());
 		
-//		NavigableSet<Integer> desendingSet = scores.descendingSet();
-//		System.out.println("내림차순 정렬:" +desendingSet);
-//		System.out.println("오름차순 정렬:" +desendingSet.descendingSet());
+		NavigableSet<Integer> desendingSet = scores.descendingSet();
+		System.out.println("내림차순 정렬:" +desendingSet);
+		System.out.println("오름차순 정렬:" +desendingSet.descendingSet());
 		
 		NavigableSet<Integer> headSet = scores.headSet(87, true);
 		NavigableSet<Integer> tailSet = scores.tailSet(87, true);
