@@ -19,17 +19,18 @@ public class NexonTest_01 {
 	 * year 거치 기간 
 	 */
 	public static int cal(int money, int add, int year) {
+		
 		// 만기 금액
 		int result = 0;
-				
-		// 이율
-		float plus = 0;
 		
 		for(int i=1; i<year; i++) {
 			
+			// 이율
+			float plus = 0;
+			
 			// 3의 배수인 연차에는 이벤트 금리 적용
-			if(i%3==0) plus = add / (float) 100 + (i%5);
-			else plus = add / (float) 100;
+			if(i%3==0) plus = (float) add / (float) 100 + (i%5);
+			else plus = (float) add / (float) 100;
 
 			result = (int) (money + (money*plus));
 			money = result;
