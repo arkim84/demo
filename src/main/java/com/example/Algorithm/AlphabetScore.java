@@ -1,12 +1,18 @@
 package com.example.Algorithm;
 
-
 public class AlphabetScore {
 	
 	public static void main(String[] args) {
-		String str = "abcd";
-		int num = str.charAt(0);
-		System.out.println(num);
+		
+		// 알파벳 아스키코드 출력
+		String str = "abcdefghijklmn";
+		
+		int num = 0;
+		
+		for(int i=0; i<str.length(); i++) {
+			num = str.charAt(i);
+			System.out.println(num);
+		}
 	} 
 
 }

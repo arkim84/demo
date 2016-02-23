@@ -30,19 +30,20 @@ public class NexonTest_01 {
 			// 3의 배수인 연차에는 이벤트 금리 적용
 			if(i%3==0) plus = add / (float) 100 + (i%5);
 			else plus = add / (float) 100;
-			
-			System.out.println("연차 " +i+ " 금리: "+plus);
-			
+
 			result = (int) (money + (money*plus));
-			
 			money = result;
+			
+			System.out.println("연차: " +i+ " / 금리: "+plus+" / 만기금액: "+money);
 		}
 		
 		return result;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(cal(100000, 10, 15));
+		
+		cal(100000, 10, 15);
+		
 	}
 	
 }
