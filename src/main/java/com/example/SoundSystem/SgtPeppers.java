@@ -1,13 +1,14 @@
 package com.example.SoundSystem;
 
-import org.springframework.stereotype.Component;
+public class SgtPeppers implements CompactDisc {
 
-@Component
-public class SgtPeppers implements CompactDisc{
-
-	@Override
-	public void play() {
-		System.out.println("Sgt.Peppers Lonely Hearts Club Band");
-	}
+  private String title = "Sgt. Pepper's Lonely Hearts Club Band";  
+  private String artist = "The Beatles";
+  
+  @Override
+  public void play() {
+	  System.out.println("여기다");
+	  System.out.println("Playing " + title + " by " + artist);
+  }
 
 }

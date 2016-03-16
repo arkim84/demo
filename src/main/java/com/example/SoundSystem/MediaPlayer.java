@@ -1,6 +1,6 @@
 package com.example.SoundSystem;
 
-public interface CompactDisc {
+public interface MediaPlayer {
 
 	void play();
 
